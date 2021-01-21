@@ -1,6 +1,6 @@
 # Algorithms Complexity
 
-return to [index](./readme)
+return to [index](./readme.md)
 
 Simple `for` complexity: `2n+2`
 
