@@ -2,7 +2,13 @@
 
 return to [index](./readme.md)
 
-Simple `for` complexity: `2n+2`
+- Content
+  - [Simple For](#simple-for)
+  - [Nested For](#nested-for)
+
+## Simple For
+
+`for` complexity: `2n+2`
 
 ```dart
         1   n+1     n
@@ -28,3 +34,22 @@ Simple `for` complexity: `2n+2`
 
     }
 ```
+
+## Nested For
+
+```dart
+    int c=0; 1
+    for(int i=0;i<n;i++){  2n+2
+        for(int k=0;k<n;k++){  (2n+2)n
+            c++; 1*n*n
+        }
+    }
+```
+
+Formula:
+
+```dart
+    1 + 2n + 2 + (2n+2)n + 1 * n * n 
+```
+
+$$3 + 2n + $2n^2$$$
